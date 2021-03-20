@@ -20,7 +20,7 @@ def get_features_vec(pic:np.ndarray) -> np.ndarray:
     features_vec=model.predict(img)[0, :]
     return features_vec
 
-def get_distance_two_features_vec(vec1:np.ndarray,vec2:np.ndarray,distance_type:str='ec')->np.float:
+def get_distance_two_features_vec(vec1:np.ndarray,vec2:np.ndarray,distance_type:str='euclidean')->np.float:
     """
         :argument
             vec1: input, output features from get_features np array
