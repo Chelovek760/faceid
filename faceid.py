@@ -4,7 +4,7 @@ from deepface.commons import functions
 
 import numpy as np
 
-def get_features_vec(pic:np.ndarray) -> np.ndarray:
+def get_features_vec(pic) -> np.ndarray:
     """
     :argument
         pic: input PIL.Image.open object
